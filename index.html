@@ -1,15 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initialscale=1.0">
-    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Living in the Cloud</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
 </head>
-
 <body>
-    <h1>Welcome to My Portfolio</h1>
-    <p>This is where I showcase my projects and skills.</p>
+    <header>
+        <div class="language-switcher">
+            <button id="en-btn">English</button> | <button id="fr-btn">Français</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about" data-en="About" data-fr="À propos">About</a></li>
+                <li><a href="#education" data-en="Education" data-fr="Éducation">Education</a></li>
+                <li><a href="#skills" data-en="Skills" data-fr="Compétences">Skills</a></li>
+                <li><a href="#experience" data-en="Experience" data-fr="Expérience">Experience</a></li>
+                <li><a href="#languages" data-en="Languages" data-fr="Langues">Languages</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <div class="profile-container">
+            <div class="profile-box">
+                <div class="profile">
+                    <img src="profile_picture.png" alt="Profile Picture" class="profile-picture">
+                    <div class="profile-info">
+                        <h2>Maksim Bogomolov</h2>
+                        <p data-en="Cloud Engineer in Training" data-fr="Ingénieur Cloud en Formation">Cloud Engineer in Training</p>
+                        <div class="social-media">
+                            <a href="https://www.linkedin.com/in/maksim-bogomolov" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/BogMa579" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-me-box">
+                <div class="about-me">
+                    <h2 data-en="About Me" data-fr="À propos de moi">About Me</h2>
+                    <p data-en="Welcome to my portfolio! I am an aspiring cloud engineer, trying to learn everything that interests me, be it outside of work or part of it. Always ready to help and motivated to do so!" data-fr="Bienvenue dans mon portfolio ! Je suis un ingénieur cloud en herbe, essayant d'apprendre tout ce qui m'intéresse, que ce soit en dehors du travail ou dans le cadre de celui-ci. Toujours prêt à aider et motivé à le faire !">Welcome to my portfolio! I am an aspiring cloud engineer, trying to learn everything that interests me, be it outside of work or part of it. Always ready to help and motivated to do so!</p>
+                </div>
+            </div>
+            <div class="contact-box">
+                <div class="contact-info">
+                    <h2 data-en="Contact Info" data-fr="Informations de contact">Contact Info</h2>
+                    <p>maxusmaksim@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="education">
+        <h2 data-en="Education" data-fr="Éducation">Education</h2>
+        <div class="education-container">
+            <div class="education-item">
+                <h3 data-en="BTS Cloud Computing" data-fr="BTS Informatique en Nuage">BTS Cloud Computing</h3>
+                <p>LYCÉE Guillaume Kroll</p>
+                <p data-en="2024 - present" data-fr="2024 - présent">2024 - present</p>
+            </div>
+            <div class="education-item">
+                <h3 data-en="Section I - Informatics and Communication" data-fr="Section I - Informatique et Communication">Section I - Informatics and Communication</h3>
+                <p>LYCÉE Guillaume Kroll</p>
+                <p data-en="2019 - 2023" data-fr="2019 - 2023">2019 - 2023</p>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <h2 data-en="Technical Skills" data-fr="Compétences Techniques">Technical Skills</h2>
+        <div class="skills-container">
+            <div class="skill-item">
+                <h3 data-en="Virtualisation" data-fr="Virtualisation">Virtualisation</h3>
+                <ul>
+                    <li>Proxmox</li>
+                    <li>Docker</li>
+                    <li>HyperV</li>
+                </ul>
+            </div>
+            <div class="skill-item">
+                <h3 data-en="Scripting" data-fr="Scripting">Scripting</h3>
+                <ul>
+                    <li>Powershell</li>
+                    <li>bash</li>
+                </ul>
+            </div>
+            <div class="skill-item">
+                <h3 data-en="Server management" data-fr="Gestion des serveurs">Server management</h3>
+                <ul>
+                    <li>AD</li>
+                    <li>LDAP</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="experience">
+        <h2 data-en="Work Experience" data-fr="Expérience Professionnelle">Work Experience</h2>
+        <div class="experience-container">
+            <div class="experience-item">
+                <h3>Luxair S.A. IT Services & Transformations</h3>
+                <p><strong data-en="Role:" data-fr="Rôle :">Role:</strong> IT Support</p>
+                <p><strong data-en="Responsibilities:" data-fr="Responsabilités :">Responsibilities:</strong> Employee PC and account management, On-site technician</p>
+                <p><strong data-en="Dates:" data-fr="Dates :">Dates:</strong> June - August 2023 and June - August 2022</p>
+            </div>
+            <div class="experience-item">
+                <h3>Paul Wurth Geprolux S.A. General Engineering – Process Automation</h3>
+                <p><strong data-en="Role:" data-fr="Rôle :">Role:</strong> Database Migration</p>
+                <p><strong data-en="Responsibilities:" data-fr="Responsabilités :">Responsibilities:</strong> Translation (English to Russian)</p>
+                <p><strong data-en="Dates:" data-fr="Dates :">Dates:</strong> June - August 2019</p>
+            </div>
+        </div>
+    </section>
+    <section id="languages">
+        <h2 data-en="Languages" data-fr="Langues">Languages</h2>
+        <div class="languages-container">
+            <div class="language-item">
+                <span class="flag-icon flag-icon-lu"></span>
+                <p>Luxembourgish</p>
+                <div class="language-level">C2</div>
+            </div>
+            <div class="language-item">
+                <span class="flag-icon flag-icon-fr"></span>
+                <p>French</p>
+                <div class="language-level">C1</div>
+            </div>
+            <div class="language-item">
+                <span class="flag-icon flag-icon-de"></span>
+                <p>German</p>
+                <div class="language-level">C1</div>
+            </div>
+            <div class="language-item">
+                <span class="flag-icon flag-icon-gb"></span>
+                <p>English</p>
+                <div class="language-level">C1</div>
+            </div>
+            <div class="language-item">
+                <span class="flag-icon flag-icon-ru"></span>
+                <p>Russian</p>
+                <div class="language-level">C2</div>
+            </div>
+        </div>
+    </section>
+    <script src="scripts.js"></script>
 </body>
-
 </html>
